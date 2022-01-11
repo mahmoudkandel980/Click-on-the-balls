@@ -42,7 +42,7 @@ class Circle {
             c.fillStyle = this.color;
         };
         this.update = function () {
-            if (this.x + this.radius > innerWidth || this.x - this.radius < 0) {
+            if (this.x + this.radius > innerWidth || this.x - this.radius < 5) {
                 this.dx = -this.dx;
             }
 
@@ -54,8 +54,8 @@ class Circle {
             this.y += this.dy;
 
             //inneractivity
-            if (mouse.x - this.x < 50 && mouse.x - this.x > -50 &&
-                mouse.y - this.y < 50 && mouse.y - this.y > -50
+            if (mouse.x - this.x < 10 && mouse.x - this.x > -10 &&
+                mouse.y - this.y < 10 && mouse.y - this.y > -10
                 && this.radius < maxRadius) {
                 this.radius += 30
             }
