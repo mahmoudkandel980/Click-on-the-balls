@@ -54,8 +54,8 @@ class Circle {
             this.y += this.dy;
 
             //inneractivity
-            if (mouse.x - this.x < 10 && mouse.x - this.x > -10 &&
-                mouse.y - this.y < 10 && mouse.y - this.y > -10
+            if (mouse.x - this.x < 30 && mouse.x - this.x > -30 &&
+                mouse.y - this.y < 30 && mouse.y - this.y > -30
                 && this.radius < maxRadius) {
                 this.radius += 30
             }
